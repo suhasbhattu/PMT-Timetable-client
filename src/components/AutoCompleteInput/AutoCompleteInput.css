@@ -1,0 +1,9 @@
+.AutoCompleteInput {
+  display: flex;
+  flex-direction: row;
+}
+
+.AutoCompleteInput-Input {
+  padding: 0.5rem;
+  font-size: 0.875rem;
+}

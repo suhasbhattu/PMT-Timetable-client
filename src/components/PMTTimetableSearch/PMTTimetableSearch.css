@@ -1,0 +1,44 @@
+.PMT-Timetable-PMTTimetableSearch {
+  background-color: #121212;
+  display: grid;
+  grid-template-areas: "searchByBusStop" "orRow" "searchByBusRoute";
+  grid-template-rows: auto auto auto;
+  margin-inline: 10rem;
+  padding: 1rem;
+  border-radius: 5px;
+  row-gap: 1rem;
+}
+
+.searchByBusStop {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.orRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchByBusRoute {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.searchButton {
+  background-color: #238636;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 0 0.7375rem;
+}
+
+.orRow-text {
+  color: #ffffff;
+}
