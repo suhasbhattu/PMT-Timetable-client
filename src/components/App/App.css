@@ -6,6 +6,7 @@
   align-items: center;
   background-color: #121212;
   color: #fff;
+  font-family: "Cabin", sans-serif;
 }
 
 .PMT-Timetable-App-header-name {
@@ -15,4 +16,10 @@
 
 .PMT-Timetable-App-content {
   margin-block-start: 1rem;
+}
+
+.AppContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }

@@ -1,11 +1,10 @@
 import { useState } from "react";
-import { BusStop } from "../../store/slice";
 
 import "./AutoCompleteInput.css";
 
 interface AutoCompleteInputProps {
   placeholder: string;
-  list: BusStop[];
+  list: any[];
   selectedStopId: string;
   onChange: (item: string) => void;
 }
@@ -17,8 +16,9 @@ const AutoCompleteInput = (props: AutoCompleteInputProps) => {
   const filterFunction = (inputValue: string) => {
     return props.list.filter(
       (value) =>
-        value.name.toLocaleLowerCase().indexOf(inputValue.toLocaleLowerCase()) >
-        -1
+        (value.busNumber ?? value.name)
+          .toLocaleLowerCase()
+          .indexOf(inputValue.toLocaleLowerCase()) > -1
     );
   };
 
@@ -41,7 +41,9 @@ const AutoCompleteInput = (props: AutoCompleteInputProps) => {
                 onClick={(event) => {
                   onSelectItem(event, item.id);
                 }}
-              >{`${item.name} - ${item.localizedName}`}</li>
+              >{`${item.busNumber ? item.busNumber + "-" : ""} ${item.name} - ${
+                item.localizedName
+              }`}</li>
             );
           })}
         </ul>

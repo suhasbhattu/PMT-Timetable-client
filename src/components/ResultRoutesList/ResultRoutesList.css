@@ -1,0 +1,63 @@
+.AppResultRoutesList {
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.AppResultRoutesListItems {
+  list-style: none;
+  padding-inline: 0;
+}
+
+.AppResultRoutesList-route {
+  padding: 15px;
+  background-color: #0b0c10;
+  border-radius: 5px;
+  width: 30rem;
+  margin-block: 0.5rem;
+  cursor: pointer;
+}
+
+.AppResultRoutesList-layout {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.AppResultRoutesList-BusNumber {
+  padding-block: 5px;
+  width: 12rem;
+  text-align: center;
+  font-size: 3rem;
+  background-color: #2e7d32;
+  color: #ffffff;
+  border-radius: 5px;
+}
+
+.AppResultRoutesList-BusNumber-Text {
+  padding-inline: 1rem;
+}
+
+.AppResultRoutesList-BusDetails {
+  padding-block: 5px;
+  color: #ffffff;
+  width: 18rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.AppResultRoutesList-BusName {
+  font-family: "Cabin", sans-serif;
+  font-size: 1.2rem;
+}
+
+.AppResultRoutesList-BusLocalizedName {
+  font-family: "Roboto", sans-serif;
+  font-family: "Tiro Devanagari Marathi", serif;
+  font-size: 1.2rem;
+}
+
+.AppRouteStopsList-ItemStopIcon {
+  width: 1rem;
+}

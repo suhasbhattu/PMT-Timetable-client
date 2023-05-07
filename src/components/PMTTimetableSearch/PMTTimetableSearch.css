@@ -31,12 +31,27 @@
 }
 
 .searchButton {
-  background-color: #238636;
-  border: none;
-  border-radius: 5px;
-  color: #ffffff;
+  outline: 0px;
+  border: 1px solid #2e7d32;
   cursor: pointer;
-  padding: 0 0.7375rem;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.75;
+  text-transform: uppercase;
+  padding: 6px 16px;
+  border-radius: 4px;
+  background-color: #2e7d32;
+  color: #ffffff;
+}
+
+.searchButton:hover {
+  background-color: #0b0c10;
+  border: solid 1px #2e7d32;
+}
+
+.searchButton:active {
+  background-color: #2e7d32;
+  color: #ffffff;
 }
 
 .orRow-text {

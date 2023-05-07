@@ -1,4 +1,6 @@
 import PMTTimetableSearch from "../PMTTimetableSearch";
+import ResultRoutesList from "../ResultRoutesList";
+import RouteStopsList from "../RouteStopsList";
 import "./App.css";
 
 const App = () => {
@@ -8,7 +10,11 @@ const App = () => {
         <span className="PMT-Timetable-App-header-name">PMT Timetable</span>
       </div>
       <div className="PMT-Timetable-App-content">
-        <PMTTimetableSearch/>
+        <PMTTimetableSearch />
+        <div className="AppContent">
+          <ResultRoutesList />
+          <RouteStopsList />
+        </div>
       </div>
     </div>
   );

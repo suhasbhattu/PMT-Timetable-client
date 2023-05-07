@@ -1,0 +1,33 @@
+.AppRouteStopsList {
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.AppRouteStopsList-List {
+  block-size: 35rem;
+  overflow-y: scroll;
+  list-style: none;
+  padding-inline-start: 0;
+  padding-inline-end: 0.7rem;
+}
+
+.AppRouteStopsList-Item {
+  padding: 15px;
+  background-color: #0b0c10;
+  border-radius: 5px;
+  width: 40rem;
+  margin-block: 0.5rem;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.AppRouteStopsList-ItemName {
+  font-family: "Cabin", sans-serif;
+  font-size: 1rem;
+}
+
+.AppRouteStopsList-ItemLocalizedNameText {
+  font-family: "Roboto", sans-serif;
+  font-family: "Tiro Devanagari Marathi", serif;
+  font-size: 1rem;
+}
